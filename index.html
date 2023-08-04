@@ -199,6 +199,11 @@
         html {
             scroll-behavior: smooth;
         }
+        .HeadText{
+            
+            text-align: center;
+
+        }
 
         /* Style inputs with type="text", select elements and textareas */
         input[type=text],
@@ -261,6 +266,29 @@
         .container {
             margin: 50px;
         }
+
+
+        /* Educational Details */
+        #degree{
+            margin: 0 10px;
+
+        }
+        .EducationDetails{
+            display: flex;
+            align-content: space-between;
+            padding: 40px;
+            width: fit-content;
+        }
+        .Institute{
+            margin-bottom: 30px;
+            width: auto;
+            font-weight: bold;
+            width: fit-content;
+        }
+        .EducationDescription{
+            text-align: left;
+        }
+        
     </style>
 </head>
 
@@ -273,7 +301,7 @@
                 <ul>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Skill">Skills</a></li>
-                    <li><a href="/">Service</a></li>
+                    <li><a href="#Education">Education</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
@@ -358,7 +386,37 @@
 
         </section>
         <hr>
-        <section class="ThirdSection" id="Contact">
+        <!-- Adding Educational Details -->
+        <Section class="ThirdSection" id="Education">
+            <div class="HeadText"><h1>Educational Details</h1></div>
+            <div class="EducationDetails">
+                <div id="degree">
+                    <div class="Institute"><h3>VEER SURENDRA SAI UNIVERSITY OF TECHNOLOGY, BURLA(2018-2022)</h3></div>
+                    <div class="EducationDescription">
+                        Bachelor Of Technology In Electrical Engineering
+                    </div>
+            
+                </div>
+                <div id="degree">
+                    <div class="Institute"><h3>UpendraNath College Of Science, Balasore(2015-2017)</h3></div>
+                    <div class="EducationDescription">
+                        Intermediate In Science
+                    </div>
+
+                </div>
+                <div id="degree">
+                    <div class="Institute"><h3>Ratnakar Town High School, Balasore(2015)</h3></div>
+                    <div class="EducationDescription">
+                        Matriculation
+                    </div>
+
+                </div>
+            </div>
+
+        </Section>
+        <hr>
+        <section class="FifthSection" id="Contact">
+            <div class="HeadText"><h1>Contact Me</h1></div>
             <div class="container">
                 <form action="action_page.php">
 
