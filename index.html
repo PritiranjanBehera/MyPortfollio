@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritiranjan-Devloper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Adding Styles(CSS) -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(9, 9, 34);
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(15, 7, 65);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgb(13, 13, 15);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .left span {
+            color: rgb(239, 208, 150);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23vh 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 30px 0;
+
+        }
+
+        .leftSection .buttons {
+            margin-top: 50px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #080b36;
+            color: aliceblue;
+            border: 2px solid white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 90%;
+            /* margin: 30px 0; */
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(103, 57, 229);
+            height: 1.2px;
+            margin: 40px 64px;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .text-grey {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 74vw;
+            height: 2px;
+            margin: 50px 0;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 70px;
+            width: 1px;
+            background-color: antiquewhite;
+            margin: 0 140px;
+
+        }
+
+        .img-top {
+            width: 40px;
+            position: relative;
+            top: -45px;
+            left: -20px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(249, 244, 244);
+
+        }
+
+        .vertical-description {
+            position: relative;
+            top: 40px;
+            width: 150px;
+            font-size: 12px;
+        }
+
+        footer {
+            background-color: #07091b;
+        }
+
+        .footer {
+
+
+            padding: 30px 70px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-second {
+            display: flex;
+            text-align: left;
+            justify-items: right;
+
+
+        }
+
+        .links {
+            list-style: none;
+
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px;
+
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Style inputs with type="text", select elements and textareas */
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+        input[type=number],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- navigation bar -->
+        <nav>
+            <div class="left"><span>PRITI</span>RANJAN</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Skill">Skills</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- page instroduction -->
+        <section class="firstSection" id="Home">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">PRITIRANJAN</span>
+                <div>I am a passionate</div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"
+                        onclick="window.open('https://drive.google.com/file/d/1eegKVjqQIi5ou_T8lXxmooUqiqrsFnuK/view?usp=sharing','_blank'); ">Download
+                        Resume</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <!-- writing Work-Experience and skills -->
+        <section class="secondSection" id="Skill">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Training / Work-Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="img-top" src="Java_logo_PNG1.png" alt="">
+                    <div class="vertical-title">JAVA</div>
+                    <div class="vertical-description">
+                        <ul class="point">
+                            <li>Good knowledge about inheritance, encapsulation, constructors, interfaces,
+                                collectionframework, ExceptionHandling and multithreading.</li>
+                            <li>Have a good knowledge on Java basics like datatype, variables, operators, function,
+                                string and array.</li>
+                            <li>Efficiently writing code in Java.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="sql-server.png" alt="">
+                    <div class="vertical-title">SQL</div>
+                    <div class="vertical-description">
+                        <ul class="point">
+                            <li>Good at solving queries.</li>
+                            <li>Good knowledge about subquery and co-related subquery. </li>
+                            <li>Good knowledge about grouping function. </li>
+                            <li>Knowledge about joins and its types. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top"
+                        src="imgbin_front-end-web-development-web-design-front-and-back-ends-web-developer-png.png"
+                        alt="">
+                    <div class="vertical-title">Web-Devlopment</div>
+                    <div class="vertical-description">
+                        <ul class="point">
+                            <li>Have a good knowledge on the HTML , CSS, BOOTSTRAP and JAVASCRIPT.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="Java_logo_PNG1.png" alt="">
+                    <div class="vertical-title">J2EE</div>
+                    <div class="vertical-description">
+                        <ul class="point">
+                            <li>Possess sound knowledge of Core Java with J2EE and well-versed with various
+                                object-oriented programming concepts</li>
+                            <li>Capable of writing accurate SQL queries to retrieve needed data from the database using
+                                JDBC</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <hr>
+        <section class="ThirdSection" id="Contact">
+            <div class="container">
+                <form action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="choose">country</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="india">India</option>
+                    </select>
+                    <label for="ph-n0">Ph-No</label>
+                    <input type="number" id="ph-n0" name="ph-n0" placeholder="your mobile number">
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+        </section>
+        <hr>
+    </main>
+
+
+    <!-- code for footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2>My Portfolio</h2>
+            </div>
+            <div class="footer-second">
+
+                <ul class="links">
+
+                    <li>Name-Pritiranjan Behera</li>
+                    <li>From-Odisha</li>
+                    <li>Java Developer</li>
+                    <li>Contact-8342897450</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-rights">Copyright &#169; pritiranjansportfolio.com | All rights reserved</div>
+    </footer>
+
+
+
+    <!-- go to typedjs on google -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Video Editor.', 'Web Developer.', 'JAVA Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
